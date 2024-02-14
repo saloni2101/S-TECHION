@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      size-adjust: cover;
+    }
+    .logo{
+      max-width: 50px;
+      margin-left: -90px;
+    
+    }
+    .logoname{
+      color: green;
+      font-size: x-large;
+      margin-right: 150px;
+      margin-top: 15px;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: -5px;
+      margin-left: inherit;
+      margin-top: 10px;
+    }
+  
+    .navbar a:hover {
+      background-color: #ddd;
+      color: #051dfa;
+    }
+    #i1{
+      position: absolute;
+      margin-left: -1250px;
+      margin-top: 20px;
+    }
+    #div1{
+    height: 400px;
+    width: 1350px;
+    border: 1px solid blue;
+    margin-top: 12px;
+    background-color: rgb(11, 37, 85);
+    }
+    #head1{
+        position: absolute;
+        color:orangered;
+        margin-left: 70px;
+        margin-top: 150px;
+        font-size: 50px;
+    }
+    #hr1{
+        margin-top: 200px;
+        width: 70px;
+        margin-left: 70px;
+        background-color: orange;
+    }
+    #b1{
+        height: 60px;
+        width: 150px;
+        background-color: orange;
+        margin-top: 100px;
+        margin-left: 70px;
+    }
+    #div2{
+        height: 300px;
+        border: 1px solid wheat;
+    }
+    #div3{
+        height: 100px;
+        background-color: rgb(11, 37, 85);
+        width: 1350px;
+        border: 1px solid blue;
+    }
+    #head2{
+        position: absolute;
+        margin-left: 200px;
+        color: white;
+    }
+    #head3{
+        position: absolute;
+        margin-left: 700px;
+        margin-top: 20px;
+        color: white;
+    }
+    #head7{
+        position: absolute;
+        margin-left: 550px;
+        margin-top: 60px;
+        color: white;
+    }
+    #div4{
+        border: 1px solid gray;
+        margin-top: 30px;
+        height: 30px;
+        background-color: gray;
+    }
+    #s1{
+        border: none;
+        background-color: gray;
+        color: black;
+        text-align: center;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #p1{
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 70px;
+        color: white;
+        font-size: 25px;
+    }
+    #div5{
+        height:300px;
+        width: 800px;
+        background-color: rgb(11, 37, 85);
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    #head4{
+        position: absolute;
+        color: orange;
+        margin-top: 110px;
+        text-align: center;
+        margin-left: 200px;
+    }
+    #p3{
+        position: absolute;
+        margin-top: 170px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin-left: 20px;
+    }
+    #div6{
+        height:300px;
+        width: 800px;
+        background-color: rgb(11, 37, 85);
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    #head5{
+        position: absolute;
+        color: orange;
+        margin-left: 200px;
+        margin-top: 110px;
+    }
+    #p4{
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 20px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    #div7{
+        height:300px;
+        width: 800px;
+        background-color: rgb(11, 37, 85);
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    #head6{
+        position: absolute;
+        color: orange;
+        margin-top: 110px;
+        margin-left: 250px;
+    }
+    #p5{
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 20px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    #p2{
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 30px;
+        font-size: 22px;
+        text-align: center;
+    }
+    #img1{
+        position: absolute;
+        margin-left: 600px;
+        height: 400px;
+        width: 725px;
+    }
+    #img2{
+        position: absolute;
+        height:90px;
+        width: 90px;
+        margin-left: 320px;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+    }
+    #img3{
+        position: absolute;
+        height:80px;
+        width: 80px;
+        margin-left: 320px;
+        border-radius: 10px;
+        margin-top: 10px; 
+    }
+    #img4{
+        position: absolute;
+        height:80px;
+        width: 80px;
+        margin-left: 320px;
+        border-radius: 10px;
+        margin-top: 10px; 
+    }
+    
+    #div8{
+        height: 500px;
+        width: 1335px;
+        margin-top: 3px;
+        background-color: rgb(255, 251, 246);
+    }
+    #n1{
+        margin-left: 40px;
+        margin-top: 20px;
+        height: 30px;
+    }
+    #n2{
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 30px;
+    }
+    #n3{
+        margin-left: 40px;
+        margin-top: 20px;
+        height: 30px;
+    }
+    #n4{
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 30px;
+    }
+    #n5{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 412px;
+        height: 30px;
+    }
+    #n6{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 412px;
+        height: 80px;
+    }
+    #n7{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #s2{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 418px;
+        height: 30px;
+    }
+    #b2{
+        margin-left: 40px;
+        margin-top: 20px;
+        height: 30px;
+        width: 80px;
+        background-color: orange;
+    }
+    #div9{
+        height: 500px;
+        width: 500px;
+        border-radius: 20px;
+        background-color: rgb(255, 251, 246);
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 750px;      
+    }
+    #s3{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 418px;
+        height: 30px;
+    }
+    #div10{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(11, 37, 85);
+    margin-top: 337px;
+    color: aliceblue;
+   }
+   #h6{
+    margin-left: 990px;
+    margin-top: -335px;
+    font-size: 50px;
+   }
+   #hom{
+    margin-left: 80%;
+    margin-top: -50px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #abo{
+    margin-left:  80%;
+    margin-top: -5px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #ind{
+    margin-left:  80%;
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #ser{
+    margin-left:  80%;
+    margin-top: 80px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #car{
+    margin-left:  80%;
+    margin-top: 120px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #us{
+    margin-left:  80%;
+    margin-top: 160px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: absolute;
+   }
+   #h5{
+    margin-left: 720px;
+    margin-top: -170px;
+    font-size: 50px;
+   }
+   #ins{
+    font-size: 22px;
+    margin-left: 750px;
+    margin-top: -20PX;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+    
+   }
+   #hel{
+    font-size: 22px;
+    margin-left: 750px;
+    margin-top: 25PX;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+   }
+   #eco{
+    font-size: 22px;
+    margin-left: 750px;
+    margin-top: 70PX;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+   }
+   #hos{
+    font-size: 22px;
+    margin-left: 750px;
+    margin-top: 110PX;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+   }
+   #med{
+    font-size: 22px;
+    margin-left: 750px;
+    margin-top: 150PX;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+   }
+   #h4{
+    margin-left: 480px;
+    margin-top: -140px;
+    font-size: 50px;
+   }
+   #con{
+    position: absolute;
+    font-size: 22px;
+    margin-left: 500px;
+    margin-top: -3px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none
+   }
+   #nex{
+    position: absolute;
+    font-size: 22px;
+    margin-left: 500px;
+    margin-top: 40px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none
+   }
+   #hrm{
+    position: absolute;
+    font-size: 22px;
+    margin-left: 500px;
+    margin-top: 80px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-decoration: none
+   }
+   
+    li:hover{
+        color: orange;
+    }
+    #head{
+        margin-top: -140px;
+        margin-left: 50px;
+        font-size: 58px;
+
+    }   
+    #pr1{
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 22px;
+    }  
+   .pr2{
+    margin-left: 50px;
+    margin-top: 50px;
+   }
+   #img17{
+    height: 40px;
+    width: 50px;
+    margin-left: 50px;
+   }
+   #img18{
+    height: 40px;
+    width: 50px;
+    margin-left: 50px;
+   }
+   #img19{
+    height: 40px;
+    width: 50px;
+    margin-left: 50px;
+   }
+   #img20{
+    height: 40px;
+    width: 50px;
+    margin-left: 50px;
+   }
+   #em{
+    height: 50px;
+    width: 250px;
+    margin-left: 50px;
+   }
+   #a1{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    </style>
+<body>
+    <div class="navbar">
+        <img id="i1" src="endless knot orange.png" alt="stechion logo" class="logo">
+        <heading class="logoname"><b>S-TECHION</b></heading>
+        <a href="webpage.html"><b>Home</b></a>
+        <a href="S-about us.html"><b>About Us</b></a>
+        <a href="Industries.html"><b>Industries</b></a>
+        <a href="services.html"><b>Services</b></a>
+        <a href="careerproject (1).html"><b>Career</b></a>
+        <a href="Contact Us.html"><b>Contact Us</b></a>
+        <button id="bt"><a id="a7" href="getstart.html">Get Start</a></button>
+      </div>
+    <div id="div1">
+        <h1 id="head1">E-COMMERCE</h1>
+        <p id="p1">Your Customer's Journey, Mapped Out<br> For You<br></p>
+        <img id="img1" src="laptop.jpg">
+        <hr id="hr1">
+        <button id="b1"><a id="a1" href="form.html">Be in Touch With</a></button>
+    </div>
+    <div id="div2">
+        <p id="p2">The shopping landscape has transformed significantly in recent years, presenting consumers with an extensive array of choices. To excel in today's fiercely competitive marketplace, e-commerce businesses must prioritize user-friendliness, agility, and a customer-centric approach.<br><br>
+            Recognizing the pivotal role customers play in the success of your e-commerce venture, emphasizing customer-centricity becomes crucial. Your customers, serving as the driving force behind your business, deserve optimal assistance when reaching out with inquiries or concerns. Failing to deliver excellent customer service may put the loyalty of your customer base at risk.<br><br>
+            Enter S-TECHION – your solution to these challenges. We provide a comprehensive suite of services meticulously designed to not only foster the growth of your business but also concurrently build a steadfast and loyal customer following.</p>
+    </div>
+    <div id="div3">
+        <h2 id="head2">> Supply Chain Management </h2>
+        <h2 id="head3">> Prospects and Webleads   </h2>
+        <h2 id="head7">> Order Processing </h2>
+    </div>
+    <div id="div5">
+        <h1 id="head4">Supply Chain Management</h1>
+        <img id="img2"src="images1.png">
+        <p id="p3">S-TECHION offers companies a seamless solution for managing <br>suppliers, vendors, logistics partners, and customers by harnessing <br>the power of smart contracts. Our cutting-edge tracking software ensures.<br> the seamless delivery of products throughout their entire lifecycle.</p>
+    </div>
+    <div id="div6">
+        <h1 id="head5">Prospects and Webleads </h1>
+        <img id="img3"src="download (1).jpg">
+        <p id="p4">In the realm of e-commerce, there is a need for top-notch services <br>capable of consistently attracting potential customers and generating web<br> leads. We specialize in automating critical processes,including lead<br> generation, sales activity tracking, and customer relationship management.</p>
+    </div>
+    <div id="div7">
+        <h1 id="head6">Order Processing</h1>
+        <img id="img4"src="images5.jpg">
+        <p id="p5">Utilizing our fulfillment tracking-and-tracing service, customers can<br> effortlessly follow the journey of their orders, from placement to delivery.<br> This includes scenarios where unexpected delays, such as weather<br> conditions or transport strikes, may impact the usual course of fulfillment.</p>
+    </div>
+    <div id="div10">
+        <h6 id="h6">Quick Links</h6>
+       <a id="hom" href="webpage.html"> <li>HOME</li></a> 
+       <a id="abo" href="ABOUT-US.html"> <li>ABOUT US</li></a> 
+       <a id="ind" href="Industries.html"> <li>INDUSTRIES</li></a> 
+       <a id="ser" href="services.html"> <li>SERVICES</li></a> 
+       <a id="car" href="careerproject (1).html"> <li>CAREER</li></a> 
+       <a id="us" href="Contact Us.html"> <li>CONTACT US</li></a> 
+       <h5 id="h5">Industries</h5>
+       <a id="ins" href="INSURANCE1.html"> <li >Insurance</li></a> 
+       <a id="hel" href="Healthcare.html"> <li>Healthcare</li></a> 
+       <a id="eco" href="ECommerce1.html"> <li>E-Commerce</li></a> 
+       <a id="hos" href="Hospitality.html"> <li>Hospitality</li></a> 
+       <a id="med" href="media.html"> <li>Media And Communication</li></a> 
+       <h4 id="h4">Services</h4>
+       <a id="con" href="consulting.html"> <li >Consulting</li></a> 
+       <a id="nex" href="readmore.html"> <li >NextGen </li></a>
+       <a id="hrm" href="HRm%20services.html"> <li > HRM Services</li></a>
+  
+       <h1 id="head"><b>S-TECHION</b><br></h1>
+       <p id="pr1">Our mission is clear and straightforward:<br>to digitally revolutionize business processes,
+        <br>optimize costs, and enhance returns.</font><br></p>
+        <p class="pr2"><b>Sign Up For Our Website</b></font><br></p>
+        <b> <input id="em" type="email" placeholder="Email Id" ></b></font><br>
+        <p class="pr2"><b> Our Social Links</b></font><br></p>
+        
+        <img id="img20" src="facebook.png">
+        <img id="img17" src="insta.png">
+        <img id="img18" src="youtube.png">
+        <img id="img19" src="twitter.png">
+</div>
+</body>
+</html>
