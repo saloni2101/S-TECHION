@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{
+                position: relative;
+                border: 2px solid black;
+                height: 600px;
+                width: 700px;
+                margin-left: 320px;
+                margin-top: 60px;
+                background-color: rgb(255, 206, 116);
+                border-radius: 10px;
+            }
+            h1{
+                font-size: 50px;
+                position: absolute;
+                margin-left: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            p{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 20px;
+                color: rgb(25, 34, 85);
+                font-size: 20px;
+            }
+            #div2{
+                height: 420px;
+                width: 600px;
+                position: absolute;
+                margin-top: 170px;
+                margin-left: 50px;
+            }
+            img{
+                position: absolute;
+                margin-left: 650px;
+                height: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-top: 10px;
+            }
+            #name{
+                height: 40px;
+                width: 200px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+            #country{
+                position: absolute;
+                margin-left: 370px;
+                height: 40px;
+                width: 200px;
+                margin-top: -40px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+            #text2{
+                position: absolute;
+                margin-left: 160px;
+                margin-top: -17px;
+            }
+            #email{
+                position: absolute;
+                height: 40px;
+                width: 200px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+            #text4{
+                position: absolute;
+                margin-left: 370px;
+                margin-top: -20px;
+            }
+            #phone{
+                position: absolute;
+                height: 40px;
+                width: 200px;
+                margin-left: 370px;
+                margin-top: -20px;
+                border: 1px solid rgb(194, 194, 194);
+            }
+            #text5{
+                position: absolute;
+                margin-top: 70px;
+            }
+            #message{
+                position: absolute;
+                height: 100px;
+                width: 580px;
+                margin-top: 80px;
+            }
+            button{
+                position: absolute;
+                margin-top: 210px;
+                margin-left: 250px;
+                height: 30px;
+                width: 100px;
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function myfunction(){
+                alert("Your query is submitted");
+            }
+        </script>
+        <div id="div1">
+            <a href="index.html"><img src="cross.png"></a>
+            <h1>Do you have any query?</h1>
+            <p>Drop us a message today and let’s start transforming your ideas into reality.<br> We’re eager to hear from you and help you achieve your goals.</p>
+            <div id="div2">
+              <text id="text1">Name</text><br>
+              <input type="name" id="name" placeholder="Name" required>
+              <text id="text2">Country</text><br>
+              <input type="name" id="country" placeholder="country" required><br><br> <br>   
+              <text id="text3">Email</text><br>
+              <input type="name" id="email" placeholder="Email" required>
+              <text id="text4">Mobile no.</text><br>
+              <input type="tel" id="phone" placeholder="Mobile no." required>
+              <text id="text5">Message</text><br>
+              <textarea id="message" name="message" rows="4" placeholder="write your query" required></textarea>
+              <button ><b>SEND</b></button>
+            </div>
+        </div> 
+    </body>
+</html>
